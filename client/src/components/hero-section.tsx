@@ -19,7 +19,7 @@ export function HeroSection() {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center animate-fade-in">
         {/* Left Column - Text Content */}
         <div className="text-left">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight" data-testid="hero-title">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight font-normal" data-testid="hero-title">
             Hey, I'm Sindhu!<br />
             Welcome to my corner of the internet!
           </h1>
