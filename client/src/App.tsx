@@ -4,13 +4,21 @@ import { QueryClientProvider } from "@tanstack/react-query"
 import { Toaster } from "@/components/ui/toaster"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { ThemeProvider } from "@/components/theme-provider"
+import { ScrollToTop } from "@/components/scroll-to-top"
+import { BackToTopFab } from "@/components/back-to-top-fab"
 import Home from "@/pages/home"
+import AboutPage from "@/pages/about"
+import ProjectsPage from "@/pages/projects"
+import ContactPage from "@/pages/contact"
 import NotFound from "@/pages/not-found"
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+        <Route path="/about" component={AboutPage} />
+        <Route path="/projects" component={ProjectsPage} />
+        <Route path="/contact" component={ContactPage} />
       <Route component={NotFound} />
     </Switch>
   )
@@ -27,7 +35,9 @@ function App() {
       >
         <TooltipProvider>
           <Toaster />
+          <ScrollToTop />
           <Router />
+          <BackToTopFab />
         </TooltipProvider>
       </ThemeProvider>
     </QueryClientProvider>

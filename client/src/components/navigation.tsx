@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { Link } from "wouter"
 import { useTheme } from "next-themes"
 import { Sun, Moon, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -38,34 +39,10 @@ export function Navigation() {
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => scrollToSection("home")} 
-              className="text-foreground hover:text-primary transition-colors duration-200"
-              data-testid="nav-home"
-            >
-              Home
-            </button>
-            <button 
-              onClick={() => scrollToSection("about")} 
-              className="text-foreground hover:text-primary transition-colors duration-200"
-              data-testid="nav-about"
-            >
-              About
-            </button>
-            <button 
-              onClick={() => scrollToSection("projects")} 
-              className="text-foreground hover:text-primary transition-colors duration-200"
-              data-testid="nav-projects"
-            >
-              Projects
-            </button>
-            <button 
-              onClick={() => scrollToSection("contact")} 
-              className="text-foreground hover:text-primary transition-colors duration-200"
-              data-testid="nav-contact"
-            >
-              Contact
-            </button>
+            <Link href="/" className="text-foreground hover:text-primary transition-colors duration-200" data-testid="nav-home">Home</Link>
+            <Link href="/about" className="text-foreground hover:text-primary transition-colors duration-200" data-testid="nav-about">About</Link>
+            <Link href="/projects" className="text-foreground hover:text-primary transition-colors duration-200" data-testid="nav-projects">Projects</Link>
+            <Link href="/contact" className="text-foreground hover:text-primary transition-colors duration-200" data-testid="nav-contact">Contact</Link>
           </div>
 
           <div className="flex items-center space-x-4">
@@ -95,34 +72,10 @@ export function Navigation() {
         {isMenuOpen && (
           <div className="md:hidden pb-4" data-testid="mobile-menu">
             <div className="flex flex-col space-y-3">
-              <button 
-                onClick={() => scrollToSection("home")} 
-                className="text-foreground hover:text-primary transition-colors duration-200 py-2 text-left"
-                data-testid="mobile-nav-home"
-              >
-                Home
-              </button>
-              <button 
-                onClick={() => scrollToSection("about")} 
-                className="text-foreground hover:text-primary transition-colors duration-200 py-2 text-left"
-                data-testid="mobile-nav-about"
-              >
-                About
-              </button>
-              <button 
-                onClick={() => scrollToSection("projects")} 
-                className="text-foreground hover:text-primary transition-colors duration-200 py-2 text-left"
-                data-testid="mobile-nav-projects"
-              >
-                Projects
-              </button>
-              <button 
-                onClick={() => scrollToSection("contact")} 
-                className="text-foreground hover:text-primary transition-colors duration-200 py-2 text-left"
-                data-testid="mobile-nav-contact"
-              >
-                Contact
-              </button>
+              <Link href="/" onClick={() => setIsMenuOpen(false)} className="text-foreground hover:text-primary transition-colors duration-200 py-2 text-left" data-testid="mobile-nav-home">Home</Link>
+              <Link href="/about" onClick={() => setIsMenuOpen(false)} className="text-foreground hover:text-primary transition-colors duration-200 py-2 text-left" data-testid="mobile-nav-about">About</Link>
+              <Link href="/projects" onClick={() => setIsMenuOpen(false)} className="text-foreground hover:text-primary transition-colors duration-200 py-2 text-left" data-testid="mobile-nav-projects">Projects</Link>
+              <Link href="/contact" onClick={() => setIsMenuOpen(false)} className="text-foreground hover:text-primary transition-colors duration-200 py-2 text-left" data-testid="mobile-nav-contact">Contact</Link>
             </div>
           </div>
         )}

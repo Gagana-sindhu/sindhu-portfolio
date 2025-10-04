@@ -1,14 +1,24 @@
+import aboutImage from "@assets/img.jpg"
+
 export function AboutSection() {
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
+    <section id="about" className="pt-12 pb-20 px-4 sm:px-6 lg:px-8 bg-background">
       <div className="max-w-7xl mx-auto">
+        {/* Section Heading */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4" data-testid="about-heading">
+            About <span className="gradient-text">Me</span>
+          </h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-purple-600 to-blue-500 mx-auto rounded-full"></div>
+        </div>
+
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Column - Image */}
           <div className="relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="Circuit board technology" 
+                src={aboutImage}
+                alt="About - Pothapragada Gagana Sindhu"
                 className="w-full h-full object-cover"
               />
             </div>

@@ -52,22 +52,17 @@ export function ContactSection() {
   const socialLinks = [
     {
       name: "GitHub",
-      url: "https://github.com",
+      url: "https://github.com/Gagana-sindhu",
       icon: SiGithub
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/in/gaganasindhu-pothapragada-a392612a5/",
       icon: SiLinkedin
     },
     {
-      name: "X",
-      url: "https://x.com",
-      icon: SiX
-    },
-    {
-      name: "CodePen",
-      url: "https://codepen.io",
+      name: "Resume",
+      url: "https://github.com/Gagana-sindhu/Resume/blob/main/Resume%20gs.pdf",
       icon: FaCodepen
     }
   ]
@@ -160,7 +155,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="font-medium" data-testid="contact-email">hello@sindhu.dev</p>
+                    <p className="font-medium" data-testid="contact-email">gaganasindhu2005@gmail.com</p>
                   </div>
                 </div>
 
@@ -170,7 +165,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Location</p>
-                    <p className="font-medium" data-testid="contact-location">San Francisco, CA</p>
+                    <p className="font-medium" data-testid="contact-location">Telangana, India</p>
                   </div>
                 </div>
               </div>

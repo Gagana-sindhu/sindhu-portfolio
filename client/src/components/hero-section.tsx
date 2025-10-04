@@ -1,7 +1,10 @@
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useLocation } from "wouter"
+import profileImage from "@assets/photo 2.jpg"
 
 export function HeroSection() {
+  const [, navigate] = useLocation()
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
     if (element) {
@@ -15,7 +18,7 @@ export function HeroSection() {
   }
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16">
+    <section id="home" className="flex items-start justify-center px-4 sm:px-6 lg:px-8 pt-20 pb-8">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center animate-fade-in font-bold">
         {/* Left Column - Text Content */}
         <div className="text-left">
@@ -29,7 +32,7 @@ export function HeroSection() {
           </p>
           
           <Button
-            onClick={() => scrollToSection("projects")}
+            onClick={() => navigate('/projects')}
             className="inline-flex items-center justify-center px-8 py-3 text-base font-semibold text-white bg-foreground dark:bg-primary rounded-md hover:opacity-90 transition-all duration-300"
             data-testid="view-projects-button"
           >
@@ -41,16 +44,11 @@ export function HeroSection() {
         <div className="relative flex justify-center md:justify-end">
           <div className="relative w-full max-w-md">
             <div className="aspect-square bg-gradient-to-br from-purple-100 to-blue-100 dark:from-purple-900/20 dark:to-blue-900/20 rounded-lg overflow-hidden shadow-2xl">
-              <div className="w-full h-full flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">👋</div>
-                  <p className="text-sm text-muted-foreground">Pothapragada Gagana Sindhu</p>
-                </div>
-              </div>
-            </div>
-            {/* Yellow Badge */}
-            <div className="absolute bottom-4 right-4 w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg">
-              <span className="text-2xl">✨</span>
+              <img
+                src={profileImage}
+                alt="Pothapragada Gagana Sindhu"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

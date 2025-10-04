@@ -1,54 +1,37 @@
 import { ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { SiGithub } from "react-icons/si"
+import pro1Image from "@assets/pro1.png"
+import pro2Image from "@assets/pro2.png"
 
 export function ProjectsSection() {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-featured online shopping platform with real-time inventory, payment integration, and admin dashboard. Built with React, Node.js, and MongoDB.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      technologies: ["React", "Node.js", "MongoDB"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example/ecommerce"
+      title: "X-Plore India 1.0",
+      description: "X-Plore India 1.0 is a prototype travel website that simplifies destination discovery across India using Kaggle datasets. It features a clean, responsive UI with smooth navigation and is designed to scale with future enhancements like AI-driven recommendations, real-time updates, and booking options.",
+      image: pro1Image,
+      technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Kaggle datasets"],
+      liveUrl: "https://gagana-sindhu.github.io/XPLORE-1.0/",
+      githubUrl: "https://github.com/Gagana-sindhu/XPLORE-1.0.git"
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "Collaborative project management tool with kanban boards, real-time updates, and team analytics. Streamlines workflow for remote teams.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      technologies: ["Vue.js", "Firebase", "Tailwind"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example/taskmanager"
+      title: "Employee Management System",
+      description: "A desktop-based Employee Management System built with Python and Tkinter, featuring a user-friendly interface, comprehensive record management, advanced search, and secure data handling through SQLite, designed for efficiency and scalability.",
+      image: pro2Image,
+      technologies: ["Python", "Tkinter", "SQLite"],
+      githubUrl: "https://github.com/Gagana-sindhu/Employee-Management-System.git"
     },
     {
       id: 3,
-      title: "Social Media Dashboard",
-      description: "Analytics dashboard for social media managers. Track engagement, schedule posts, and monitor multiple platforms from one interface.",
-      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      technologies: ["Next.js", "GraphQL", "PostgreSQL"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example/socialdashboard"
-    },
-    {
-      id: 4,
-      title: "Weather Forecast App",
-      description: "Beautiful weather application with hourly and weekly forecasts, location-based updates, and interactive weather maps using real-time data.",
+      title: "GlobeWeather",
+      description: "Web app that displays real-time global weather using an API, with an interactive interface and pop-up alerts for user engagement.",
       image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      technologies: ["React", "Weather API", "CSS3"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example/weatherapp"
+      technologies: ["HTML", "CSS", "JavaScript"],
+      liveUrl: "https://gagana-sindhu.github.io/Weather-Webapp/",
+      githubUrl: "https://github.com/Gagana-sindhu/Weather-Webapp.git"
     },
-    {
-      id: 5,
-      title: "Fitness Tracker",
-      description: "Personal fitness tracking app with workout logging, progress visualization, and personalized health insights powered by machine learning.",
-      image: "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      technologies: ["React Native", "Express", "MongoDB"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example/fitnesstracker"
-    }
   ]
 
   return (
