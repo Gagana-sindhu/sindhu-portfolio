@@ -32,6 +32,15 @@ export function ProjectsSection() {
       liveUrl: "https://gagana-sindhu.github.io/Weather-Webapp/",
       githubUrl: "https://github.com/Gagana-sindhu/Weather-Webapp.git"
     },
+    {
+      id: 4,
+      title: "Smart Personal Finance Management System",
+      description: "AI-powered finance web app for expense analysis, spending prediction, and interactive financial insights.",
+      image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      technologies: ["Python", "Streamlit", "Flask", "Scikit-learn", "Pandas", "NumPy", "PyMuPDF", "Matplotlib"],
+      liveUrl: "https://smart-personal-finance-management-systemgit-xas7pbcxhxnbz3xjnw.streamlit.app/",
+      githubUrl: "https://github.com/Gagana-sindhu/Smart-Personal-Finance-Management-System.git"
+    },
   ]
 
   return (
